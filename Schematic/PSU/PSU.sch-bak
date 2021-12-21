@@ -733,8 +733,6 @@ F 3 "~" H 8425 3400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6100 2275 6575 2275
-Wire Wire Line
-	7175 1925 7175 1850
 $Comp
 L Device:LED D5
 U 1 1 61C3F80F

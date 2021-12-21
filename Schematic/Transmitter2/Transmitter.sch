@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Bluetooth to AM adapter"
-Date "2021-09-16"
-Rev ""
+Date "2021-11-27"
+Rev "2"
 Comp "Bjørner Sandom"
 Comment1 ""
 Comment2 ""
@@ -485,8 +485,8 @@ L Device:L L1
 U 1 1 614A3677
 P 6125 1700
 F 0 "L1" H 6177 1746 50  0000 L CNN
-F 1 "*" H 6177 1655 50  0000 L CNN
-F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6125 1700 50  0001 C CNN
+F 1 "47µH" H 6177 1655 50  0000 L CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6125 1700 50  0001 C CNN
 F 3 "~" H 6125 1700 50  0001 C CNN
 	1    6125 1700
 	1    0    0    -1  
@@ -509,17 +509,6 @@ Wire Wire Line
 	5625 1450 5800 1450
 Wire Wire Line
 	6125 2000 6125 1950
-$Comp
-L Device:C C11
-U 1 1 614C3564
-P 6550 1700
-F 0 "C11" H 6665 1746 50  0000 L CNN
-F 1 "*" H 6665 1655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6588 1550 50  0001 C CNN
-F 3 "~" H 6550 1700 50  0001 C CNN
-	1    6550 1700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6125 1450 6550 1450
 Wire Wire Line
@@ -592,25 +581,10 @@ Wire Wire Line
 Connection ~ 6550 2200
 Wire Wire Line
 	6550 2200 7400 2200
-$Comp
-L Device:C C14
-U 1 1 615425F0
-P 7675 1950
-F 0 "C14" V 7825 1900 50  0000 L CNN
-F 1 "100nF" V 7900 1850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7713 1800 50  0001 C CNN
-F 3 "~" H 7675 1950 50  0001 C CNN
-	1    7675 1950
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4875 3225 4875 3350
 Wire Wire Line
 	4875 3350 5225 3350
-Wire Wire Line
-	7925 3350 7925 2725
-Wire Wire Line
-	7925 2725 8050 2725
 Wire Wire Line
 	5225 3225 5225 3350
 Connection ~ 5225 3350
@@ -628,21 +602,12 @@ Wire Wire Line
 	7400 3225 7400 3350
 Connection ~ 7400 3350
 Wire Wire Line
-	7400 3350 7925 3350
-Wire Wire Line
 	9375 3475 9375 3350
 Wire Wire Line
 	7400 1450 9350 1450
 Wire Wire Line
 	9350 1450 9350 2525
-Wire Wire Line
-	9350 2525 9175 2525
 Connection ~ 7400 1450
-NoConn ~ 8050 2525
-NoConn ~ 9175 2425
-NoConn ~ 9175 2725
-NoConn ~ 8050 2425
-Connection ~ 7925 3350
 $Comp
 L Device:C C15
 U 1 1 615F2310
@@ -704,8 +669,6 @@ Wire Wire Line
 	4375 2675 4425 2675
 Wire Wire Line
 	4725 2675 5225 2675
-Wire Wire Line
-	8050 2625 7925 2625
 $Comp
 L Device:C C16
 U 1 1 616DFF61
@@ -717,8 +680,6 @@ F 3 "~" H 9625 2625 50  0001 C CNN
 	1    9625 2625
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9475 2625 9175 2625
 Wire Wire Line
 	5800 1550 5800 1450
 Connection ~ 5800 1450
@@ -874,7 +835,7 @@ L Device:Crystal Y1
 U 1 1 624A66A5
 P 1625 2975
 F 0 "Y1" H 1625 2800 50  0000 C CNN
-F 1 "*" H 1625 2725 50  0000 C CNN
+F 1 "3.579545 MHz" H 1625 2725 50  0000 C CNN
 F 2 "Crystal:Crystal_SMD_HC49-SD" H 1625 2975 50  0001 C CNN
 F 3 "~" H 1625 2975 50  0001 C CNN
 	1    1625 2975
@@ -1036,10 +997,6 @@ Wire Wire Line
 	6550 1950 6950 1950
 Wire Wire Line
 	9925 1450 9925 3075
-Wire Wire Line
-	7825 1950 7925 1950
-Wire Wire Line
-	7925 1950 7925 2625
 $Comp
 L power:GND #PWR023
 U 1 1 6158789B
@@ -1268,17 +1225,6 @@ F 3 "" H 5550 5600 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 5550 5600
-$Comp
-L Device:C C13
-U 1 1 61C2676B
-P 6950 1700
-F 0 "C13" H 7065 1746 50  0000 L CNN
-F 1 "*" H 7065 1655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6988 1550 50  0001 C CNN
-F 3 "~" H 6950 1700 50  0001 C CNN
-	1    6950 1700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6950 1550 6950 1450
 Connection ~ 6950 1450
@@ -1288,27 +1234,7 @@ Wire Wire Line
 	6950 1850 6950 1950
 Connection ~ 6950 1950
 Wire Wire Line
-	6950 1950 7525 1950
-Wire Wire Line
-	7925 3350 8625 3350
-$Comp
-L myDevices:BUF634AIDDAR U5
-U 1 1 616C7DDB
-P 8050 2425
-F 0 "U5" H 8612 2687 60  0000 C CNN
-F 1 "BUF634AIDDAR" H 8612 2581 60  0000 C CNN
-F 2 "myDevices:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.514x3.2mm_ThermalVias" H 8850 2665 60  0001 C CNN
-F 3 "" H 8050 2425 60  0000 C CNN
-	1    8050 2425
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	9925 3075 9925 3350
-Wire Wire Line
-	8625 3150 8625 3350
-Connection ~ 8625 3350
-Wire Wire Line
-	8625 3350 9375 3350
 $Comp
 L Device:C C19
 U 1 1 61CCC127
@@ -1394,4 +1320,107 @@ F 3 "~" H 9000 5600 50  0001 C CNN
 	1    9000 5600
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C11
+U 1 1 614C3564
+P 6550 1700
+F 0 "C11" H 6665 1746 50  0000 L CNN
+F 1 "390pF" H 6625 1600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6588 1550 50  0001 C CNN
+F 3 "~" H 6550 1700 50  0001 C CNN
+	1    6550 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 61C2676B
+P 6950 1700
+F 0 "C13" H 7065 1746 50  0000 L CNN
+F 1 "150pF" H 7065 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6988 1550 50  0001 C CNN
+F 3 "~" H 6950 1700 50  0001 C CNN
+	1    6950 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8625 3350 9375 3350
+Connection ~ 8625 3350
+Wire Wire Line
+	8625 3150 8625 3350
+$Comp
+L myDevices:BUF634AIDDAR U5
+U 1 1 616C7DDB
+P 8050 2425
+F 0 "U5" H 8612 2687 60  0000 C CNN
+F 1 "BUF634AIDDAR" H 8612 2581 60  0000 C CNN
+F 2 "myDevices:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.514x3.2mm_ThermalVias" H 8850 2665 60  0001 C CNN
+F 3 "" H 8050 2425 60  0000 C CNN
+	1    8050 2425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9475 2625 9175 2625
+NoConn ~ 8050 2425
+NoConn ~ 9175 2725
+NoConn ~ 9175 2425
+NoConn ~ 8050 2525
+Wire Wire Line
+	9350 2525 9175 2525
+Wire Wire Line
+	8050 2625 7925 2625
+Wire Wire Line
+	7925 1950 7925 2625
+Wire Wire Line
+	6950 1950 7525 1950
+Wire Wire Line
+	7825 1950 7925 1950
+$Comp
+L Device:C C14
+U 1 1 615425F0
+P 7675 1950
+F 0 "C14" V 7825 1900 50  0000 L CNN
+F 1 "100nF" V 7900 1850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7713 1800 50  0001 C CNN
+F 3 "~" H 7675 1950 50  0001 C CNN
+	1    7675 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7925 3350 8625 3350
+Connection ~ 7925 3350
+Wire Wire Line
+	7400 3350 7925 3350
+Wire Wire Line
+	7925 2725 8050 2725
+Wire Wire Line
+	7925 3350 7925 2725
+$Comp
+L Device:R R15
+U 1 1 61C9CB4B
+P 8175 1950
+F 0 "R15" V 7975 1900 50  0000 L CNN
+F 1 "10kΩ" V 8075 1850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8105 1950 50  0001 C CNN
+F 3 "~" H 8175 1950 50  0001 C CNN
+	1    8175 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8025 1950 7925 1950
+Connection ~ 7925 1950
+$Comp
+L power:GND #PWR025
+U 1 1 61CA747B
+P 8425 2000
+F 0 "#PWR025" H 8425 1750 50  0001 C CNN
+F 1 "GND" H 8425 1850 50  0000 C CNN
+F 2 "" H 8425 2000 50  0001 C CNN
+F 3 "" H 8425 2000 50  0001 C CNN
+	1    8425 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8325 1950 8425 1950
+Wire Wire Line
+	8425 1950 8425 2000
 $EndSCHEMATC
